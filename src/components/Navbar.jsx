@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 const Navbar = ({ todos }) => {
     return (
         <div className="navbar">
-            <h1>Redux tradition style App</h1>
+            <h1>Redux Tradition Style App</h1>
             <ul>
                 <li>Home</li>
                 <li>About</li>

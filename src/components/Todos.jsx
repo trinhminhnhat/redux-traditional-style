@@ -2,17 +2,14 @@ import PropTypes from 'prop-types';
 import { useEffect } from 'react';
 import { connect } from 'react-redux';
 
-import {
-    deleteTodo,
-    getTodos,
-    markComplete
-} from '../store/actions/todoActions';
+import { deleteTodo, getTodos, markComplete } from '../store/actions/todoActions';
 import TodoForm from './TodoForm';
 
 const Todos = ({ todos, getTodos, markComplete, deleteTodo }) => {
     useEffect(() => {
         getTodos();
-    }, [])
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     return (
         <div className="todo-list">
