@@ -1,4 +1,6 @@
-# Learn redux traditional style through todo app
+# Redux Traditional Style
+
+Learn redux traditional style through todo app.
 
 ![Web's preview](./public/banner.png)
 

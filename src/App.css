@@ -64,7 +64,8 @@ input[type='text'] {
     box-sizing: border-box;
     padding: 10px;
     margin: 6px 0;
-    border: 0;
+    border: 1px solid;
+    border-radius: 2px;
 }
 
 input[type='submit'] {
