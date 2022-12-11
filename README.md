@@ -2,7 +2,7 @@
 
 ![Web's preview](./public/banner.png)
 
-Live: [**redux-traditional-style.netlify.app**](redux-traditional-style.netlify.app)
+Live: [**https://redux-traditional-style.netlify.app**](https://redux-traditional-style.netlify.app)
 
 ## Environment
 
