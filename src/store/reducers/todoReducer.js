@@ -1,25 +1,42 @@
+import { ADD_TODO, DELETE_TODO, GET_TODOS, MARK_COMPLETE } from '../types';
+
 const initialState = {
-    todos: [
-        {
-            id: 1,
-            name: 'Work 1',
-            isCompleted: true,
-        },
-        {
-            id: 2,
-            name: 'Work 2',
-            isCompleted: false,
-        },
-        {
-            id: 3,
-            name: 'Work 3',
-            isCompleted: true,
-        },
-    ],
+    todos: [],
 };
 
 const todoReducer = (state = initialState, action) => {
-    return state;
+    console.log('state: ', action);
+    switch (action.type) {
+        case GET_TODOS:
+            return {
+                ...state,
+                todos: action.payload,
+            };
+
+        case MARK_COMPLETE:
+            return {
+                ...state,
+                todos: state.todos.map((todo) => {
+                    if (todo.id === action.payload) todo.completed = !todo.completed;
+                    return todo;
+                }),
+            };
+
+        case ADD_TODO:
+            return {
+                ...state,
+                todos: [action.payload, ...state.todos],
+            };
+
+        case DELETE_TODO:
+            return {
+                ...state,
+                todos: state.todos.filter((todo) => todo.id !== action.payload),
+            };
+
+        default:
+            return state;
+    }
 };
 
 export default todoReducer;
