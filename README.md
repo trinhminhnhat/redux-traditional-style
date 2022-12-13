@@ -15,3 +15,7 @@ Live: [**https://redux-traditional-style.netlify.app**](https://redux-traditiona
 - react 18.2.x
 - redux 4.2.x
 - react-redux 8.0.x
+
+## Author
+
+[**Trịnh Minh Nhật**](https://github.com/trinhminhnhat)
