@@ -33,7 +33,6 @@ export const markComplete = (id) => (dispatch) => {
 // };
 
 export const addTodo = (newTodo) => async (dispatch) => {
-    console.log('newTodo: ', newTodo);
     try {
         await axios.post('https://jsonplaceholder.typicode.com/todos', newTodo);
         dispatch({
